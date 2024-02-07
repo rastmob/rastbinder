@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RastBinder Demo</title>
+<link rel="stylesheet" href="style.css">
+<meta property="og:title" content="RastBinder Demo">
+<meta property="og:description" content="Simplify your web application's state management with RastBinder.">
+<meta property="og:image" content="https://rastmobile.com/assets/images/header-2.svg">
+<meta property="og:url" content="https://github.com/rastmob/rastbinder">
+<meta property="og:type" content="website">
+
+</head>
+<body>
+<div id="app">
+  <h2>RastBinder Demo</h2>
+  <p>Experience the simplicity of state management with RastBinder.</p>
+  <form id="newsForm">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title">
+    </div>
+    <div class="form-group">
+      <label for="content">Content:</label>
+      <textarea id="content" name="content"></textarea>
+    </div>
+    <button type="submit">Update</button>
+  </form>
+  <div id="newsPreview">
+    <h3>Preview</h3>
+    <h4 id="previewTitle"></h4>
+    <p id="previewContent"></p>
+  </div>
+  <div class="social-links">
+    <p>Follow us on:</p>
+    <a href="https://www.linkedin.com/company/rastmobile/">LinkedIn</a> |
+    <a href="https://github.com/rastmob">GitHub</a> |
+    <a href="https://www.instagram.com/mobilerast/">Instagram</a>
+  </div>
+</div>
+<script src="store.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
