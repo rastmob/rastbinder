@@ -22,6 +22,34 @@ Integrating RastBinder into your project is straightforward. Begin by including 
 
 RastBinder is all about making web development more accessible, efficient, and enjoyable. Whether you're building a complex single-page application or a simple interactive website, RastBinder provides the tools you need to manage state effectively, allowing you to deliver exceptional web experiences that stand out.
 
+## How to Implement?
+
+Implementing RastBinder in your project involves just a few simple steps:
+
+1. **Include RastBinder**: First, include the `store.js` file in your web application. This can be done by adding a `<script>` tag in your HTML file or importing `store.js` into your JavaScript module.
+
+2. **Create a Store**: Instantiate a new store by calling `new Store(initialState)`, where `initialState` is an object representing the initial state of your application.
+
+```javascript
+const store = new Store({ count: 0 });
+```
+
+3. **Subscribe to Changes**: Use `store.subscribe(listenerFunction)` to subscribe to state changes. The `listenerFunction` will be called with the updated state anytime it changes.
+
+```javascript
+store.subscribe(state => console.log('State updated', state));
+```
+
+4. **Update the State**: Update the state using `store.setState(newState)`, where `newState` is an object with the updated state properties. This will trigger all subscribed listener functions with the new state.
+
+```javascript
+store.setState({ count: store.getState().count + 1 });
+```
+
+5. **Get the Current State**: Access the current state at any time using `store.getState()`.
+
+Following these steps will integrate RastBinder into your project, providing a powerful and straightforward state management solution.
+
 For more information, visit [Rast Mobile](https://rastmobile.com/) and follow us on [GitHub](https://github.com/rastmob/rastbinder).
 
 ## Contact
