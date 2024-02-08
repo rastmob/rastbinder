@@ -1,0 +1,27 @@
+
+{
+    "name": "rastbinder",
+    "version": "1.0.0",
+    "description": "A simple yet powerful state management library for web applications.",
+    "main": "store.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/rastmob/rastbinder.git"
+    },
+    "keywords": [
+      "state management",
+      "javascript",
+      "rastbinder",
+      "web development"
+    ],
+    "author": "contact@rastmobile.com",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/rastmob/rastbinder/issues"
+    },
+    "homepage": "https://github.com/rastmob/rastbinder#readme"
+  }
+  
